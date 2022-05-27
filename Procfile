@@ -1,2 +1,2 @@
-web: python manage.py runserver 0.0.0.0:1500
+web: python manage.py runserver
 release: python manage.py migrate
