@@ -65,13 +65,17 @@ MIDDLEWARE = [
 
 
 # CORS rules and allowed external connections
+ALLOWED_HOSTS = [
+    "http://localhost:3000",
+    "https://georgecodehub.github.io",
+]
+
+CORS_ORIGIN_ALLOW_ALL = False
+
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
-    "https://georgecodehub.github.io/portfolio",
+    "https://georgecodehub.github.io",
 )
-
-
-CORS_ALLOW_ALL_ORIGINS = False
 
 ROOT_URLCONF = "root.urls"
 
