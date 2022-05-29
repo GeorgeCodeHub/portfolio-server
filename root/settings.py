@@ -65,7 +65,13 @@ MIDDLEWARE = [
 
 
 # CORS rules and allowed external connections
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://georgecodehub.github.io/portfolio/",
+]
+
+
+CORS_ALLOW_ALL_ORIGINS = False
 
 ROOT_URLCONF = "root.urls"
 
