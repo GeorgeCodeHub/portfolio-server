@@ -30,7 +30,7 @@ class EmailApiView(APIView):
             send_mail(
                 subject=data.get("name"),
                 message=data.get("message"),
-                from_email=os.getenv("HOST_EMAIL"),
+                from_email=data.get("email"),
                 recipient_list=[data.get("email")],
             )
 
