@@ -13,9 +13,6 @@ from .serializers import (
 
 
 class CertificatesListApiView(APIView):
-    # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
-
     def get(self, request, *args, **kwargs):
         """
         List all the certificate items
@@ -26,9 +23,6 @@ class CertificatesListApiView(APIView):
 
 
 class DegreesListApiView(APIView):
-    # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
-
     def get(self, request, *args, **kwargs):
         """
         List all the degree items
@@ -39,9 +33,6 @@ class DegreesListApiView(APIView):
 
 
 class JobsListApiView(APIView):
-    # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
-
     def get(self, request, *args, **kwargs):
         """
         List all the Job items
@@ -52,9 +43,6 @@ class JobsListApiView(APIView):
 
 
 class ProjectsListApiView(APIView):
-    # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
-
     def get(self, request, *args, **kwargs):
         """
         List all the Project items
@@ -65,9 +53,6 @@ class ProjectsListApiView(APIView):
 
 
 class SkillsListApiView(APIView):
-    # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
-
     def get(self, request, *args, **kwargs):
         """
         List all the Skill items
@@ -78,9 +63,6 @@ class SkillsListApiView(APIView):
 
 
 class GetAllApiView(APIView):
-    # add permission to check if user is authenticated
-    permission_classes = [permissions.IsAuthenticated]
-
     def get(self, request, format=None, *args, **kwargs):
         """
         List all items
