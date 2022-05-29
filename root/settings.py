@@ -65,10 +65,10 @@ MIDDLEWARE = [
 
 
 # CORS rules and allowed external connections
-CORS_ORIGIN_WHITELIST = [
+CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
     "https://georgecodehub.github.io/portfolio",
-]
+)
 
 
 CORS_ALLOW_ALL_ORIGINS = False
