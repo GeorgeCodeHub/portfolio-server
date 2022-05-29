@@ -30,8 +30,8 @@ class EmailApiView(APIView):
             send_mail(
                 subject=data.get("name"),
                 message=data.get("message"),
-                from_email=data.get("email"),
-                recipient_list=[os.getenv("HOST_EMAIL")],
+                from_email=os.getenv("HOST_EMAIL"),
+                recipient_list=[data.get("email")],
             )
 
             return Response(serializer.data, status=status.HTTP_201_CREATED)
