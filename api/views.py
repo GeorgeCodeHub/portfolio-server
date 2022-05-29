@@ -12,62 +12,12 @@ from .serializers import (
 )
 
 
-class CertificatesListApiView(APIView):
-    def get(self, request, *args, **kwargs):
-        """
-        List all the certificate items
-        """
-        certificates = Certificate.objects
-        serializer = CertificateSerializer(certificates, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-
-class DegreesListApiView(APIView):
-    def get(self, request, *args, **kwargs):
-        """
-        List all the degree items
-        """
-        degrees = Degree.objects
-        serializer = DegreeSerializer(degrees, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-
-class JobsListApiView(APIView):
-    def get(self, request, *args, **kwargs):
-        """
-        List all the Job items
-        """
-        jobs = Job.objects
-        serializer = JobSerializer(jobs, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-
-class ProjectsListApiView(APIView):
-    def get(self, request, *args, **kwargs):
-        """
-        List all the Project items
-        """
-        projects = Project.objects
-        serializer = ProjectSerializer(projects, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-
-class SkillsListApiView(APIView):
-    def get(self, request, *args, **kwargs):
-        """
-        List all the Skill items
-        """
-        skills = Skill.objects
-        serializer = SkillSerializer(skills, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-
 class GetAllApiView(APIView):
     def get(self, request, format=None, *args, **kwargs):
         """
         List all items
         """
-        certificates = SkillSerializer(Certificate.objects, many=True)
+        certificates = CertificateSerializer(Certificate.objects, many=True)
 
         degrees = DegreeSerializer(Degree.objects, many=True)
 
