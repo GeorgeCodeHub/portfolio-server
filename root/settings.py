@@ -63,6 +63,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
+# CORS rules and allowed external connections
 CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = "root.urls"
