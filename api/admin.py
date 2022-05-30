@@ -49,7 +49,6 @@ class ProjectsAdmin(admin.ModelAdmin, DynamicArrayMixin):
     ]
     list_display_links = ["id"]
     list_editable = [
-        "id",
         "title",
         "isFeatured",
         "description",
@@ -63,7 +62,7 @@ class ProjectsAdmin(admin.ModelAdmin, DynamicArrayMixin):
 class SkillsAdmin(admin.ModelAdmin):
     list_display = ["id", "title", "technologies"]
     list_display_links = ["id"]
-    list_editable = ["id", "title", "technologies"]
+    list_editable = ["title", "technologies"]
 
 
 admin.site.register(Certificate, CertificateAdmin)
