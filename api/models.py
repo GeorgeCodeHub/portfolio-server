@@ -56,14 +56,14 @@ class Project(models.Model):
     title = models.CharField(max_length=100, null=False)
     isFeatured = models.BooleanField(null=True)
     description = models.TextField(null=False)
-    githubURL = models.TextField(null=True)
-    runningAppURL = models.TextField(null=True)
+    githubURL = models.TextField(blank=True, null=True)
+    runningAppURL = models.TextField(blank=True, null=True)
     technologies = ChoiceArrayField(
         base_field=models.CharField(max_length=100, choices=FUNCTION_CHOICES),
         default=list,
         null=False,
     )
-    images = ArrayField(models.CharField(max_length=100, null=False), null=False)
+    images = ArrayField(models.CharField(max_length=300, null=False), null=False)
 
     class Meta:
         db_table = "projects"

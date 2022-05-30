@@ -48,12 +48,19 @@ class ChoiceArrayField(ArrayField):
 
 
 FUNCTION_CHOICES = (
+    ("Blender3D", "Blender3D"),
+    ("CSS", "CSS"),
     ("C#", "C#"),
     ("Django", "Django"),
     ("ExpressJS", "ExpressJS"),
     ("FastAPI", "FastAPI"),
     ("Firebase", "Firebase"),
+    ("HTML", "HTML"),
     ("Javascript", "Javascript"),
+    ("Keras", "Keras"),
+    ("NextJS", "NextJS"),
+    ("NodeJS", "NodeJS"),
+    ("OpenCV", "OpenCV"),
     ("PostgreSQL", "PostgreSQL"),
     ("Python", "Python"),
     ("ReactJS", "ReactJS"),
