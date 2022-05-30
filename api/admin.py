@@ -7,11 +7,13 @@ from .models import Certificate, Degree, Job, Project, Skill
 
 class CertificateAdmin(admin.ModelAdmin):
     list_display = ["id", "title", "school", "dateAcquired"]
+    list_display_links = ["id"]
     list_editable = ["title", "school", "dateAcquired"]
 
 
 class DegreesAdmin(admin.ModelAdmin):
     list_display = ["id", "title", "school", "dateFrom", "dateTo"]
+    list_display_links = ["id"]
     list_editable = ["title", "school", "dateFrom", "dateTo"]
 
 
@@ -24,6 +26,7 @@ class JobsAdmin(admin.ModelAdmin):
         "dateFrom",
         "dateTo",
     ]
+    list_display_links = ["id"]
     list_editable = [
         "positionTitle",
         "companyTitle",
@@ -44,6 +47,7 @@ class ProjectsAdmin(admin.ModelAdmin, DynamicArrayMixin):
         "technologies",
         "images",
     ]
+    list_display_links = ["id"]
     list_editable = [
         "id",
         "title",
@@ -58,6 +62,7 @@ class ProjectsAdmin(admin.ModelAdmin, DynamicArrayMixin):
 
 class SkillsAdmin(admin.ModelAdmin):
     list_display = ["id", "title", "technologies"]
+    list_display_links = ["id"]
     list_editable = ["id", "title", "technologies"]
 
 
