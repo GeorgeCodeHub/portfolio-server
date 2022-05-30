@@ -41,7 +41,7 @@ class Job(models.Model):
     companyTitle = models.CharField(max_length=100, null=False)
     description = models.TextField(null=False)
     dateFrom = models.DateField(null=False)
-    dateTo = models.DateField(null=False)
+    dateTo = models.DateField(blank=True, null=True)
 
     class Meta:
         db_table = "jobs"
