@@ -6,9 +6,9 @@ from .models import Certificate, Degree, Job, Project, Skill
 
 
 class CertificateAdmin(admin.ModelAdmin):
-    list_display = ["id", "title", "school", "dateAcquired"]
+    list_display = ["id", "title", "school", "description", "dateAcquired"]
     list_display_links = ["id"]
-    list_editable = ["title", "school", "dateAcquired"]
+    list_editable = ["title", "school", "description", "dateAcquired"]
 
 
 class DegreesAdmin(admin.ModelAdmin):
