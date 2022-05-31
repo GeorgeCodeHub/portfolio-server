@@ -7,3 +7,7 @@ This app allows an Admin user to do CRUD operations through the Django's admin p
 The content of the app provides APIs for the Certificates, Degrees, Skills, Projects, Experiences datasets and Email handling.
 
 All the data are stored in a PostgreSQL database.
+
+![admin-view](https://raw.githubusercontent.com/GeorgeCodeHub/portfolio-server/master/Screenshots/admin-view.png)
+
+![api-view](https://raw.githubusercontent.com/GeorgeCodeHub/portfolio-server/master/Screenshots/api-view.png)
