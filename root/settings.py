@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-import django_heroku
 
 from pathlib import Path
 from dotenv import load_dotenv
@@ -33,7 +32,6 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -171,5 +169,4 @@ EMAIL_HOST_USER = os.getenv("HOST_EMAIL")
 EMAIL_HOST_PASSWORD = os.getenv("HOST_PASSWORD")
 
 
-# Settings for heroku
-django_heroku.settings(locals())
+CSRF_TRUSTED_ORIGINS = ["https://django-server-production-4d15.up.railway.app"]
