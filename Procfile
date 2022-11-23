@@ -1,0 +1,1 @@
+web: gunicorn 'personal-portfolio-server.wsgi'
