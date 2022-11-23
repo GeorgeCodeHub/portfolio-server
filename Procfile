@@ -1,1 +1,1 @@
-web: gunicorn 'personal-portfolio-server.wsgi'
+web: gunicorn 'root.wsgi'
