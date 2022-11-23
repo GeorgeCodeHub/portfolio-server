@@ -62,6 +62,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+CSRF_TRUSTED_ORIGINS = ["*"]
 
 # CORS rules and allowed external connections
 # ALLOWED_HOSTS = [
